@@ -10,6 +10,8 @@ AI Email Analyzer is a Python application that connects to your Gmail account, r
 - 🔐 Secure Gmail connection via IMAP
 - 🤖 OpenAI API integration for content analysis
 - 📊 Automatic summary and task list generation
+- ❗Detailed logs of the entire process for monitoring and debugging
+- ❓Robust error handling throughout the application
 
 
 ## 🛠️ Technologies & Tools
@@ -32,6 +34,7 @@ AI Email Analyzer is a Python application that connects to your Gmail account, r
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/let1tbee/Email-Assistant
+cd Email-Assistant
 ```
 
 ### 2. Create a virtual environment

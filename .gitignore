@@ -26,4 +26,4 @@ logs/
 *.log
 
 # Project specific
-output.txt.example
+output.txt
