@@ -39,7 +39,7 @@ def compile_mail_request(mail_request: str) -> list[ dict[str, str]]:
         {"role": "system", "content": AIROLE},
         {"role": "user", "content": f"""
         {mail_request}
-        {AIROLE}
+        {AIPROMPT}
         """}
     ]
     return messages
