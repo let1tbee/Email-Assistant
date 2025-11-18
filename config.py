@@ -17,3 +17,10 @@ MAILS_TO_SEARCH = 'UNSEEN'
 MAILS_READABILITY = '(BODY.PEEK[])'
 RESPONSE_FILE = 'output.txt'
 AI_MODEL = "gpt-5-nano"
+AIROLE = "You are assistant for email analysis"
+AIPROMPT = """
+    Carefully analyze the following emails. 
+    Summarize the key points clearly and concisely. 
+    Then, based on the email contents, generate a prioritized list of actionable straightforward tasks I should perform. 
+    Format your answer in two separate sections titled 'Main Points from Emails' and 'Action Items', using bullet points and short sentences for clarity. 
+    Provide answer in English."""
