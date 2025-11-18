@@ -1,5 +1,5 @@
 from openai import OpenAI
-from config import  OPENAI_API_KEY, AI_MODEL
+from config import  OPENAI_API_KEY, AI_MODEL, AIROLE, AIPROMPT
 from logger import get_logger
 
 logger = get_logger(__name__)
@@ -36,11 +36,11 @@ def compile_mail_request(mail_request: str) -> list[ dict[str, str]]:
     """
     logger.info("Compiling mail request...")
     messages = [
-        {"role": "system", "content": "Ти — асистент, який аналізує вхідні емейли."},
+        {"role": "system", "content": AIROLE},
         {"role": "user", "content": f"""
         {mail_request}
-    Carefully analyze the following emails. Summarize the key points clearly and concisely. Then, based on the email contents, generate a prioritized list of actionable straightforward tasks I should perform. Format your answer in two separate sections titled 'Main Points from Emails' and 'Action Items', using bullet points and short sentences for clarity. Provide answer in English.
-    """}
+        {AIROLE}
+        """}
     ]
     return messages
 
